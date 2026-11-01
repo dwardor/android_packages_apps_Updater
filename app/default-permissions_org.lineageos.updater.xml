@@ -5,6 +5,8 @@
 -->
 <exceptions>
     <exception package="org.lineageos.updater">
+        <!-- Allow local network access for custom ota server that may be there -->
+        <permission name="android.permission.ACCESS_LOCAL_NETWORK" fixed="false"/>
         <!-- Notifications -->
         <permission name="android.permission.POST_NOTIFICATIONS" fixed="false"/>
     </exception>
